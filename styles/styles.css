@@ -21,10 +21,6 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 10px;
-}
-
 aside {
     width: 20rem;
     margin: 1rem;
@@ -41,7 +37,7 @@ aside img{
 }
 
 main{
-    max-width: 150px;
+    max-width: 840px;
 }
 
 main img {
