@@ -50,6 +50,7 @@ header img {
 
 .hero {
   position: relative;
+  max-height: 500px;
   margin: 0;
   padding: 0;
 }
@@ -77,7 +78,7 @@ h1 {
 }
 
 .hero article {
-    background-color: #e9c46a;
+    background-color: rgba(153, 160, 219, 0.51);
     color: azure;
     padding: 20px;
     width: 90%;
@@ -87,13 +88,13 @@ h1 {
     display: flex;
     align-items: center;
     margin: 0;
-    border-left: 5px solid var(--secondary-color);
+    border-left: 5px #055a0580;
 }
 
 .hero article img {
   float: right;
   width: 125px;
-  border: 3px solid var(--secondary-color);
+  border: 3px #2646535a;
   margin: 0;
   box-shadow: 2px 2px 5px var(--accent1-color);
 }
@@ -101,6 +102,7 @@ h1 {
 main section {
   text-align: center;
   margin: 0;
+  padding: 2px;
 }
 
 main section h2 {
