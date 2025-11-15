@@ -78,8 +78,8 @@ h1 {
 }
 
 .hero article {
-    background-color: rgba(153, 160, 219, 0.51);
-    color: azure;
+    background-color: #5161f182;
+    color: #ffffff;
     padding: 20px;
     width: 90%;
     position: absolute;
@@ -108,7 +108,7 @@ main section {
 main section h2 {
   /* Barra oscura para el título "History" */
   background-color: var(--accent1-color);
-  color: #f4a261 ;
+  color: var(--accent2-color) ;
   padding: 10px 0;
   margin-top: 0;
   margin-bottom: 20px;
@@ -126,7 +126,8 @@ main section p {
 }
 
 footer {
-  color: #e9c46a;
+  background-color: #264653;
+  color: var(--secondary-color);
   padding: 15px 20px;
   justify-content: space-between;
   align-items: center;
