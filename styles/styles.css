@@ -12,23 +12,35 @@
     --height: auto;
 }
 
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 p {
     padding: var(--padding);
 }
 
 nav {
     background-color: var(--color);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    padding: 0.5rem;
 }
 
 h1 {
     color: var(--color);
+    border-bottom: #000;
 }
 
 img {
@@ -39,10 +51,22 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 aside {
     width: 20rem;
     text-align: var(--text-align);
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside img{
@@ -52,12 +76,8 @@ aside img{
 
 aside h2 {
     position: absolute;
-    top: 40px;
-    left: 5px;
-}
-
-main{
-    max-width: 840px;
+    top: 30;
+    left: 120px;
 }
 
 main img {
