@@ -29,6 +29,8 @@ h1, h2 {
 }
 
 nav, p, section, article {
+  display: flex;
+  list-style: none;
   margin: 16px;
   padding: 8px;
 }
@@ -38,9 +40,24 @@ nav, p, section, article {
 }
 
 header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 50px;
+  background-color: rgb(100, 171, 100);
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
 }
 
 header img {
@@ -53,6 +70,7 @@ header img {
   max-height: 500px;
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
 }
 
 .hero img {
@@ -105,6 +123,14 @@ main section {
   padding: 2px;
 }
 
+
+main section p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  text-align: left;
+}
+
 main section h2 {
   background-color: rgb(22, 36, 42);
   color: var(--accent2-color) ;
@@ -117,14 +143,58 @@ main section h2 {
   width: 100%;
 }
 
-main section p {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px 40px 20px;
-  text-align: left;
+.history section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 15px;
+  align-items: start;
+  max-width: 1000px;
+  padding: 0;
+  margin: 0;
+  padding-top: 50px;
+  border: 1px solid #ccc;
+}
+
+.history img {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.adventure section {
+  padding-top: 50px;
+  border: 1px solid #ccc;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  border: thin silver solid;
+  padding: 5px;
+  margin: 0;
+  max-width: none;
+}
+
+figure img {
+  max-width: none;
+  max-height: 150px;
+  width: 100%;
+}
+
+figcaption {
+  background-color: #222222;
+  color: white;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
 }
 
 footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: #264653;
   color: var(--secondary-color);
   padding: 15px 20px;
