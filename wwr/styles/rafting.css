@@ -45,7 +45,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  background-color: var(--accent1-color);
+  background-color: rgb(34 34 34);
   margin-bottom: 10px;
 }
 
