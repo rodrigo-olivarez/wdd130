@@ -112,7 +112,7 @@ h1 {
 .hero article img {
   float: right;
   width: 125px;
-  border: 3px #2646535a;
+  border: 3px;
   margin: 0;
   box-shadow: 2px 2px 5px var(--accent1-color);
 }
