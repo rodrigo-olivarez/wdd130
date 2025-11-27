@@ -22,22 +22,57 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <h1>White Water Rafting</h1>
-        </div>
         <div class="info">
+            <h1>White Water Rafting</h1>
             <p>23 Main River Street</p>
             <p>Kolob, California</p>
             <p>+1 999 999 9999</p>
             <p>Info@whitewater.com</p>
         </div>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d104364.75696138936!2d-111.73540757466894!3d35.171615205751124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1764166641613!5m2!1ses-419!2smx"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <div class="box">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d104364.75696138936!2d-111.73540757466894!3d35.171615205751124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1764166641613!5m2!1ses-419!2smx"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form class="content">
+                <div class="column1">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="placeholder">
+                </div>
+                <div class="column1">
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" name="Email" placeholder="placeholder">
+                </div>
+                <div class="radio">
+                    <label for="Purpose">Message Purpose</label>
+                    <div class="radio-option">
+                        <input type="radio" id="inquiry" name="purpose" value="general">
+                        <label for="inquiry">General Inquiry</label>
+                    </div>
 
+                    <div class="radio-option">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="suggestion" name="purpose" value="website">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                </div>
+                <div class="column1">
+                    <label for="Message">Message</label>
+                    <textarea id="Message" name="Message" rows="4" placeholder="Type here"></textarea>
+                </div>
+                <div class="column3">
+                    <label for="subscribe">Please Subscribe me to the monthyly newsletter</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </div>
         <section class="adventure">
             <h2>Adventure Awaits You!</h2>
             <figure>
