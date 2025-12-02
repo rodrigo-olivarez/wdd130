@@ -401,3 +401,121 @@ button[type="submit"] {
   padding: 5px;
   margin-top: 5px;
 }
+
+/*Trips*/
+
+.cards {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 0 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.cards h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #033d03;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.trips h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--accent1-color);
+    background-color: transparent;
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+
+.trip-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 16px;
+
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.trip-card figure {
+    margin: 0;
+    padding: 0;
+}
+
+.trip-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.info h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+.features {
+    list-style: disc;
+    margin-left: 25px;
+    margin-top: 10px;
+    color: var(--accent1-color);
+    padding: 0;
+}
+
+.resume-table {
+    padding: 20px 0 50px 0;
+}
+
+.resume-table h2 {
+    text-align: center;
+    color: var(--accent1-color);
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.resume-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resume-table th, .resume-table td {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.resume-table thead th {
+    background-color: var(--accent1-color);
+    color: #ffffff;
+    font-weight: bold;
+}
